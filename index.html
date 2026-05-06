@@ -1,196 +1,59 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="color-scheme" content="light">
-<title>Safety Solutions Training Ltd | Workplace Safety Training Wales & UK</title>
-<meta name="description" content="Specialist in-house and virtual workplace safety training delivered by retired police officers. Conflict management, lone worker safety, safeguarding and more. Bespoke to your organisation.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Safety Solutions Training Ltd</title>
 <style>
-/* I have kept 100% of your original CSS styling here to ensure 
-   the layout, colors, and animations are identical to your original file.
-*/
-*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --blue:#0057A8;
-  --blue-dark:#003d7a;
-  --blue-deep:#001f3f;
-  --white:#ffffff;
-  --off:#f5f8fc;
-  --text:#0d1b2a;
-  --mid:#4b5568;
-  --light:#9ca3af;
-  --green:#059669;
-  --radius:8px;
-  --shadow:0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06);
-}
-body{font-family:'Open Sans', sans-serif;color:var(--text);line-height:1.6;background-color:var(--white);-webkit-font-smoothing:antialiased}
-.container{max-width:1200px;margin:0 auto;padding:0 20px}
-header{background:var(--white);border-bottom:1px solid #e5e7eb;padding:1rem 0;position:sticky;top:0;z-index:100}
-.nav-flex{display:flex;justify-content:space-between;align-items:center}
-.logo-area{display:flex;align-items:center;gap:15px;text-decoration:none}
-.logo-circle{width:45px;height:45px;background:var(--blue);border-radius:50%;display:flex;align-items:center;justify-content:center;color:white;font-weight:800;font-size:1.2rem}
-.logo-text{display:flex;flex-direction:column}
-.logo-name{font-weight:700;color:var(--blue-deep);font-size:1.1rem;line-height:1.2}
-.logo-tagline{font-size:0.75rem;color:var(--mid);text-transform:uppercase;letter-spacing:0.5px}
-.nav-links{display:none}@media(min-width:768px){.nav-links{display:flex;gap:25px;align-items:center}}.nav-links a{text-decoration:none;color:var(--text);font-weight:600;font-size:0.95rem;transition:color 0.2s}.nav-links a:hover{color:var(--blue)}
-.hero{padding:80px 0;background:linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);border-bottom:1px solid #e2e8f0}
-.hero-content{max-width:800px}
-.hero-tag{display:inline-block;padding:4px 12px;background:rgba(0,87,168,0.1);color:var(--blue);border-radius:20px;font-size:0.85rem;font-weight:700;margin-bottom:20px;text-transform:uppercase;letter-spacing:1px}
-h1{font-size: clamp(2.5rem, 5vw, 3.5rem);line-height:1.1;color:var(--blue-deep);margin-bottom:24px;font-weight:800}
-.hero-p{font-size:1.25rem;color:var(--mid);margin-bottom:32px;line-height:1.5}
-.btn-group{display:flex;gap:15px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;padding:14px 28px;border-radius:var(--radius);font-weight:700;text-decoration:none;transition:all 0.2s;font-size:1rem}
-.btn-primary{background:var(--blue);color:white;box-shadow:var(--shadow)}.btn-primary:hover{background:var(--blue-dark);transform:translateY(-1px)}
-.btn-secondary{background:white;color:var(--blue-deep);border:2px solid #e2e8f0}.btn-secondary:hover{border-color:var(--blue);background:var(--off)}
-.section{padding:80px 0}
-.section-header{max-width:700px;margin-bottom:50px}
-.section-header h2{font-size:2.25rem;color:var(--blue-deep);margin-bottom:15px;font-weight:700}
-.grid-3{display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:30px}
-.card{background:var(--white);padding:40px;border-radius:var(--radius);border:1px solid #f1f5f9;transition:all 0.3s;height:100%}
-.card:hover{box-shadow:0 20px 25px -5px rgba(0,0,0,0.05);transform:translateY(-5px);border-color:var(--blue)}
-.card-icon{width:50px;height:50px;background:var(--off);border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:20px;color:var(--blue);font-size:1.5rem}
-.card h3{margin-bottom:15px;font-size:1.25rem;color:var(--blue-deep)}
-.card p{color:var(--mid);font-size:0.95rem}
-.stats-banner{background:var(--blue-deep);color:white;padding:40px 0}
-.stats-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:40px;text-align:center}
-.stat-item h4{font-size:2.5rem;font-weight:800;margin-bottom:5px;color:var(--white)}
-.stat-item p{font-size:0.9rem;opacity:0.8;text-transform:uppercase;letter-spacing:1px}
-.footer{background:var(--blue-deep);color:white;padding:80px 0 20px}
-.footer-grid{display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:40px;margin-bottom:60px}
-.footer-col h4{margin-bottom:25px;font-size:1.1rem;color:white}
-.footer-col a{display:block;color:rgba(255,255,255,0.7);text-decoration:none;margin-bottom:12px;font-size:0.95rem;transition:color 0.2s}
-.footer-col a:hover{color:white}
-.footer-bottom{border-top:1px solid rgba(255,255,255,0.1);padding-top:30px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:20px}
-.footer-copy{font-size:0.85rem;color:rgba(255,255,255,0.6)}
+    :root { --blue: #0057A8; --dark: #001f3f; --text: #333; }
+    body { font-family: 'Open Sans', sans-serif; margin: 0; color: var(--text); line-height: 1.6; }
+    header { background: white; padding: 20px 50px; border-bottom: 2px solid #eee; display: flex; align-items: center; justify-content: space-between; }
+    .logo { display: flex; align-items: center; gap: 15px; }
+    .logo-box { background: var(--blue); color: white; width: 45px; height: 45px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; }
+    .logo-text h2 { margin: 0; font-size: 1.2rem; color: var(--dark); }
+    .logo-text p { margin: 0; font-size: 0.7rem; text-transform: uppercase; color: #666; }
+    .hero { background: linear-gradient(135deg, var(--blue) 0%, var(--dark) 100%); color: white; padding: 100px 50px; text-align: left; }
+    .hero h1 { font-size: 3.5rem; margin: 0 0 20px 0; line-height: 1.1; }
+    .hero p { font-size: 1.3rem; max-width: 800px; margin-bottom: 35px; opacity: 0.9; }
+    .btn { background: white; color: var(--dark); padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: 700; display: inline-block; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 80px 50px; background: #f9f9f9; }
+    .card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-top: 5px solid var(--blue); }
+    .card h3 { color: var(--blue); margin-top: 0; font-size: 1.4rem; }
+    footer { background: var(--dark); color: white; padding: 40px 50px; text-align: center; font-size: 0.9rem; }
 </style>
 </head>
 <body>
-
-<header>
-  <div class="container nav-flex">
-    <a href="/" class="logo-area">
-      <div class="logo-circle">SST</div>
-      <div class="logo-text">
-        <span class="logo-name">Safety Solutions Training</span>
-        <span class="logo-tagline">Excellence in Workplace Safety</span>
-      </div>
-    </a>
-    <nav class="nav-links">
-      <a href="/training-courses/">Courses</a>
-      <a href="/sectors/">Sectors</a>
-      <a href="/about/">About</a>
-      <a href="/resources/">Resources</a>
-      <a href="/contact/" class="btn btn-primary" style="padding: 10px 20px;">Get a Quote</a>
-    </nav>
-  </div>
-</header>
-
-<main>
-  <section class="hero">
-    <div class="container">
-      <div class="hero-content">
-        <span class="hero-tag">Specialist Safety Training</span>
-        <h1>Protecting Your Staff. Protecting Your Business.</h1>
-        <p class="hero-p">Specialist safety training for a changing legal landscape. We help UK organisations navigate the Employment Rights Act, 2025 and the new 'All Reasonable Steps' duty to prevent workplace violence and third party harassment.</p>
-        <div class="btn-group">
-          <a href="/training-courses/" class="btn btn-primary">View Our Courses</a>
-          <a href="/contact/" class="btn btn-secondary">Speak to an Expert</a>
+    <header>
+        <div class="logo">
+            <div class="logo-box">SST</div>
+            <div class="logo-text">
+                <h2>Safety Solutions Training</h2>
+                <p>Excellence in Workplace Safety</p>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Expert Training Delivered by Professionals</h2>
-        <p>Our training is delivered by retired police officers with decades of operational experience in managing conflict and safety.</p>
-      </div>
-      <div class="grid-3">
+    </header>
+    <section class="hero">
+        <h1>Protecting Your Staff.<br>Protecting Your Business.</h1>
+        <p>Specialist safety training for a changing legal landscape. We help UK organisations navigate the <strong>Employment Rights Act, 2025</strong> and the new <strong>'All Reasonable Steps'</strong> duty to prevent workplace violence and third party harassment.</p>
+        <a href="#" class="btn">Get a Quote</a>
+    </section>
+    <div class="grid">
         <div class="card">
-          <div class="card-icon">👥</div>
-          <h3>Tailored Delivery</h3>
-          <p>We provide bespoke in-house sessions at your premises or virtual training via Microsoft Teams. Content is customised to your specific organisational needs and risk profile.</p>
+            <h3>Tailored Delivery</h3>
+            <p>Bespoke in-house sessions or virtual training via <strong>Microsoft Teams</strong>. Content is customised to your specific organisational needs.</p>
         </div>
         <div class="card">
-          <div class="card-icon">⚖️</div>
-          <h3>Legal Compliance</h3>
-          <p>Stay ahead of the Employment Rights Act 2025 and the Health and Safety at Work Act. We help you demonstrate 'all reasonable steps' to protect your workforce.</p>
+            <h3>Legal Compliance</h3>
+            <p>Stay ahead of the <strong>Employment Rights Act 2025</strong>. We help you demonstrate 'all reasonable steps' to protect your workforce.</p>
         </div>
         <div class="card">
-          <div class="card-icon">⭐</div>
-          <h3>Expert Trainers</h3>
-          <p>Learn from our associate trainers: Jon Franklin, Glyn Jones, Chris Ayre, Andrew 'Paddy' Patterson and John Meadows.</p>
+            <h3>Expert Trainers</h3>
+            <p>Delivered by our specialist associates: <strong>Jon Franklin, Glyn Jones, Chris Ayre, Andrew 'Paddy' Patterson and John Meadows.</strong></p>
         </div>
-      </div>
     </div>
-  </section>
-
-  <section class="stats-banner">
-    <div class="container">
-      <div class="stats-grid">
-        <div class="stat-item">
-          <h4>250+</h4>
-          <p>Clients Nationwide</p>
-        </div>
-        <div class="stat-item">
-          <h4>4.9/5</h4>
-          <p>Average Feedback</p>
-        </div>
-        <div class="stat-item">
-          <h4>100%</h4>
-          <p>Bespoke Content</p>
-        </div>
-        <div class="stat-item">
-          <h4>UK</h4>
-          <p>Wide Coverage</p>
-        </div>
-      </div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-col">
-        <h4>Popular Courses</h4>
-        <a href="/training-courses/conflict-management/">Conflict Management</a>
-        <a href="/training-courses/lone-worker-safety/">Lone Worker Safety</a>
-        <a href="/training-courses/safeguarding-adults/">Safeguarding Adults</a>
-        <a href="/training-courses/managing-challenging-phone-calls/">Managing Challenging Phone Calls</a>
-        <a href="/training-courses/">All courses &rarr;</a>
-      </div>
-      <div class="footer-col">
-        <h4>Sectors</h4>
-        <a href="/sectors/social-housing/">Social Housing</a>
-        <a href="/sectors/health-and-social-care/">Health and Social Care</a>
-        <a href="/sectors/charities-and-third-sector/">Charities and Third Sector</a>
-        <a href="/sectors/local-authority/">Local Authority</a>
-      </div>
-      <div class="footer-col">
-        <h4>Company</h4>
-        <a href="/about/">About Us</a>
-        <a href="/reviews/">Reviews and Clients</a>
-        <a href="/resources/">Resources and News</a>
-        <a href="/contact/">Contact</a>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <div class="container" style="display:flex; justify-content:space-between; width:100%; flex-wrap:wrap; gap:20px;">
-      <p class="footer-copy">&copy; 2018&ndash;2026 Safety Solutions Training Ltd &middot; 7 Coryton Crescent, Cardiff CF14 7EP &middot; Registered in Wales: 10515885 &middot; VAT No: 289232180</p>
-      <div class="footer-legal">
-        <a href="/privacy-policy/">Privacy Policy</a>
-        <a href="/cookie-policy/">Cookie Policy</a>
-      </div>
-    </div>
-  </div>
-</footer>
-
+    <footer>
+        &copy; 2026 Safety Solutions Training Ltd. Registered in Wales.
+    </footer>
 </body>
 </html>
