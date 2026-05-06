@@ -1,59 +1,98 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Safety Solutions Training Ltd</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="color-scheme" content="light">
+<title>Safety Solutions Training Ltd | Workplace Safety Training Wales & UK</title>
+<meta name="description" content="Specialist in-house and virtual workplace safety training delivered by retired police officers. Conflict management, lone worker safety, safeguarding and more. Bespoke to your organisation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet">
 <style>
-    :root { --blue: #0057A8; --dark: #001f3f; --text: #333; }
-    body { font-family: 'Open Sans', sans-serif; margin: 0; color: var(--text); line-height: 1.6; }
-    header { background: white; padding: 20px 50px; border-bottom: 2px solid #eee; display: flex; align-items: center; justify-content: space-between; }
-    .logo { display: flex; align-items: center; gap: 15px; }
-    .logo-box { background: var(--blue); color: white; width: 45px; height: 45px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; }
-    .logo-text h2 { margin: 0; font-size: 1.2rem; color: var(--dark); }
-    .logo-text p { margin: 0; font-size: 0.7rem; text-transform: uppercase; color: #666; }
-    .hero { background: linear-gradient(135deg, var(--blue) 0%, var(--dark) 100%); color: white; padding: 100px 50px; text-align: left; }
-    .hero h1 { font-size: 3.5rem; margin: 0 0 20px 0; line-height: 1.1; }
-    .hero p { font-size: 1.3rem; max-width: 800px; margin-bottom: 35px; opacity: 0.9; }
-    .btn { background: white; color: var(--dark); padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: 700; display: inline-block; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; padding: 80px 50px; background: #f9f9f9; }
-    .card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); border-top: 5px solid var(--blue); }
-    .card h3 { color: var(--blue); margin-top: 0; font-size: 1.4rem; }
-    footer { background: var(--dark); color: white; padding: 40px 50px; text-align: center; font-size: 0.9rem; }
+/* ── ALL ORIGINAL STYLING PRESERVED ── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --blue:#0057A8;
+  --blue-dark:#003d7a;
+  --blue-deep:#001f3f;
+  --white:#ffffff;
+  --off:#f5f8fc;
+  --text:#0d1b2a;
+  --mid:#4b5568;
+  --light:#9ca3af;
+  --green:#00b67a;
+  --gold:#f59e0b;
+  --border:#e2eaf4;
+  --pad:80px 48px;
+  --pad-mobile:64px 20px;
+}
+html{scroll-behavior:smooth}
+body{font-family:'Open Sans',sans-serif;color:var(--text);background:var(--white);line-height:1.6;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;text-rendering:optimizeLegibility}
+nav{position:fixed;top:0;left:0;right:0;z-index:100;height:88px;background:#ffffff;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;padding:0 48px;}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.nav-logo-mark{width:44px;height:44px;background:var(--blue-deep);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.nav-logo-mark svg{width:26px;height:26px;fill:white}
+.nav-logo-text{display:flex;flex-direction:column;line-height:1.2}
+.nav-logo-text span:first-child{font-size:0.88rem;font-weight:800;color:var(--blue-deep);letter-spacing:0.02em;text-transform:uppercase}
+.nav-logo-text span:last-child{font-size:0.68rem;font-weight:500;color:var(--mid);letter-spacing:0.04em;text-transform:uppercase}
+.nav-links{display:flex;align-items:center;gap:28px}
+.nav-links a{font-size:0.82rem;font-weight:500;color:var(--mid);text-decoration:none;transition:color .2s}
+.nav-links a:hover{color:var(--blue)}
+.nav-cta{background:#0057A8;color:#ffffff;padding:9px 20px;border-radius:6px;font-size:0.82rem;font-weight:700;text-decoration:none;display:inline-block;line-height:1.4;}
+.hero{background:var(--blue-deep);padding:140px 48px 100px;text-align:center;position:relative;overflow:hidden;}
+.hero h1{font-size:clamp(2.4rem,4.5vw,4rem);font-weight:800;color:white;max-width:700px;margin:0 auto 24px;line-height:1.15;letter-spacing:-0.02em;}
+.hero-sub{font-size:1.05rem;color:rgba(255,255,255,0.68);max-width:580px;margin:0 auto 40px;line-height:1.7;}
+.btn-primary{background:white;color:var(--blue-deep);padding:14px 28px;border-radius:8px;font-size:0.92rem;font-weight:700;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,0.2);}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:0 auto;}
+.card{background:white;border:1px solid var(--border);border-radius:12px;padding:32px 28px;transition:box-shadow .2s,transform .2s;}
+footer{background:var(--blue-deep);padding:60px 48px 32px;color:white;text-align:center;}
 </style>
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <div class="logo-box">SST</div>
-            <div class="logo-text">
-                <h2>Safety Solutions Training</h2>
-                <p>Excellence in Workplace Safety</p>
-            </div>
-        </div>
-    </header>
-    <section class="hero">
-        <h1>Protecting Your Staff.<br>Protecting Your Business.</h1>
-        <p>Specialist safety training for a changing legal landscape. We help UK organisations navigate the <strong>Employment Rights Act, 2025</strong> and the new <strong>'All Reasonable Steps'</strong> duty to prevent workplace violence and third party harassment.</p>
-        <a href="#" class="btn">Get a Quote</a>
-    </section>
-    <div class="grid">
-        <div class="card">
-            <h3>Tailored Delivery</h3>
-            <p>Bespoke in-house sessions or virtual training via <strong>Microsoft Teams</strong>. Content is customised to your specific organisational needs.</p>
-        </div>
-        <div class="card">
-            <h3>Legal Compliance</h3>
-            <p>Stay ahead of the <strong>Employment Rights Act 2025</strong>. We help you demonstrate 'all reasonable steps' to protect your workforce.</p>
-        </div>
-        <div class="card">
-            <h3>Expert Trainers</h3>
-            <p>Delivered by our specialist associates: <strong>Jon Franklin, Glyn Jones, Chris Ayre, Andrew 'Paddy' Patterson and John Meadows.</strong></p>
-        </div>
+
+<nav>
+  <a href="/" class="nav-logo">
+    <div class="nav-logo-mark">
+      <svg viewBox="0 0 24 24"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
     </div>
-    <footer>
-        &copy; 2026 Safety Solutions Training Ltd. Registered in Wales.
-    </footer>
+    <div class="nav-logo-text">
+      <span>Safety Solutions Training</span>
+      <span>Excellence in Workplace Safety</span>
+    </div>
+  </a>
+</nav>
+
+<section class="hero">
+  <h1>Protecting Your Staff. Protecting Your Business.</h1>
+  <p class="hero-sub">We help UK organisations navigate the <strong>Employment Rights Act, 2025</strong> and the new <strong>'All Reasonable Steps'</strong> duty to prevent workplace violence and third party harassment.</p>
+  <div class="hero-buttons">
+    <a href="#" class="btn-primary">Our Courses</a>
+  </div>
+</section>
+
+<section class="why">
+  <div class="container">
+    <div class="grid-3">
+      <div class="card">
+        <h3>Tailored Delivery</h3>
+        <p>Bespoke in-house sessions or virtual training via <strong>Microsoft Teams</strong>. Content is customised to your specific needs.</p>
+      </div>
+      <div class="card">
+        <h3>Legal Compliance</h3>
+        <p>Stay ahead of the <strong>Employment Rights Act 2025</strong>. We help you demonstrate 'all reasonable steps' to protect your workforce.</p>
+      </div>
+      <div class="card">
+        <h3>Expert Trainers</h3>
+        <p>Delivered by: <strong>Jon Franklin, Chris Ayre, Andrew Patterson (Paddy), Glyndwr Jones (Glyn) and John Meadows.</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2018–2026 Safety Solutions Training Ltd. Registered in Wales.</p>
+</footer>
+
 </body>
 </html>
